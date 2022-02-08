@@ -1,0 +1,11 @@
+{% extends "app/base.html" %}
+{% block content %}
+<title>BMI Data | Tools | DaySet</title>
+
+<h1>BMI Data</h1>
+<h3>This person's body mass index (bmi) is: {{bmi}}</h3>
+<h3>This person is: <span style="color:{{color}};">{{status}}</span></h3>
+
+<button class="form-button" onclick="window.location.href='/print'">Print</button>
+
+{% endblock %}

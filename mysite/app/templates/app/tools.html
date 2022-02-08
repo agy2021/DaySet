@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div width="100%" height="5%" style="background-color:white; color:black; font-size:30px; margin-top:-10px; margin-left:-10px; margin-bottom:10px; height:43px;">
+    <span style="margin-left:5px; background-color:white; color:black; font-size:35px;">DaySet</span>
+    <a href="/" class="navbar-link-nostrap" style="color:blue;">Home</a>
+    <span href="/tools" class="navbar-link-nostrap" style="color:black;">Tools</span>
+    <a href="/about" class="navbar-link-nostrap" style="color:blue;">About</a>
+</div>
+
+{% extends "app/base.html" %}
+{% block content %}
+<title>Tools | DaySet</title>
+
+
+<h1 style="margin-left:40%; margin-bottom:50px;" id="main-h">DaySet Tools</h1>
+
+<button class="btn"><a href="/weather/" style="text-decoration:none; color:lightblue;">Weather</a></button>
+<button class="btn"><a href="/covid/" style="text-decoration:none; color:red;">COVID-19 Tracker</a></button>
+<button class="btn"><a href="/bmi/" style="text-decoration:none; color:yellow;">BMI Calculator</a></button>
+<button class="btn"><a href="/notes/" style="text-decoration:none;">Notes</a></button>
+<br>
+<button class="btn"><a href="/stocks/" style="text-decoration:none; color:green;">Stocks</a></button>
+<button class="btn"><a href="/wikipedia/" style="text-decoration:none; color:lightblue;">Wikipedia</a></button>
+<button class="btn"><a href="/add_favorite/" style="text-decoration:none; color:yellow;">Bookmarks</a></button>
+<button class="btn"><a href="/calculator/" style="text-decoration:none; color:orange;">Calculator</a></button>
+
+<style>
+    #main-h{
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        font-size: 50px;
+    }
+
+    @keyframes fade-in {
+        0%{color:black};
+        50%{color:gray);
+        100%{color:white};
+    }
+</style>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+
+<div width="100%" height="5%" style="background-color:white; color:black; font-size:30px; margin-top:-10px; margin-left:-10px; margin-bottom:10px; height:43px;">
+    <span style="margin-left:5px; background-color:white; color:black; font-size:35px;">DaySet</span>
+    <span href="/" class="navbar-link-nostrap" style="color:black;">Home</span>
+    <a href="/tools" class="navbar-link-nostrap" style="color:blue;">Tools</a>
+    <a href="/about" class="navbar-link-nostrap" style="color:blue;">About</a>
+</div>
+
+{% extends "app/base.html" %}
+{% block content %}
+<title>Home | DaySet</title>
+
+<h2 class="content" id="welcome">Welcome to</h2>
+<h1 class="content" id="header-main">DaySet</h1>
+<p class="content" id="p-main">8 tools that you need for your everyday life.</p>
+
+<a href="/tools" class="content" id="link">Tools</a>
+<a href="/about" class="content" id="link2">About</a>
+<style>
+        .content{
+            display: flex;
+        }
+
+        #link{
+            margin-left: 47.5%;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        #link:hover{
+            text-decoration: underline;
+        }
+
+        #link2{
+            margin-left: 47.3%;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        #link2:hover{
+            text-decoration: underline;
+        }
+
+        #welcome{
+            margin-left: 45.7%;
+            font-size: 30px;
+        }
+
+        #header-main{
+            font-size: 100px;
+            align-items: center;
+            animation-name: fade-in;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            margin-left: 40%;
+        }
+
+        #p-main{
+            animation-name: fade-in;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            margin-left: 21%;
+            font-size: 50px;
+        }
+
+        @keyframes fade-in {
+            0%{color:black};
+            50%{color:gray);
+            100%{color:white};
+        }
+
+</style>
+
+{% endblock %}

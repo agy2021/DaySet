@@ -1,0 +1,57 @@
+{% load static %}
+<link rel="shortcut icon" href="{% static '/images/background.png' %}">
+
+<h1 id="time" style="top:-1px; margin-left:91%;"></h1>
+
+<script>
+    function loop(){
+        let time = document.getElementById("time");
+        let time_init = new Date();
+        let hour = time_init.getHours();
+        let minute = time_init.getMinutes();
+        let second = time_init.getSeconds();
+
+        time.innerText= hour + ":" + minute + ":" + second
+
+        setTimeout(()=>{
+            loop();
+        }, 1000);
+    }
+    loop();
+</script>
+
+<style>
+    *{
+        background-color: black;
+        color: white;
+        font-family:sans-serif;
+    }
+
+    .navbar-link-nostrap{
+        margin-left:5px;
+        background-color:white;
+        color:black;
+        font-size:25px;
+        text-decoration: none;
+    }
+
+    .btn{
+        font-size: 30px;
+        padding: 10px;
+        margin-left:150px;
+        margin-bottom: 100px;
+    }
+
+    .form-textbox{
+        height:30px;
+        width:15%;
+    }
+
+    .form-button{
+        height:35px;
+        width:9%;
+    }
+</style>
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,18 @@
+
+    <div width="100%" height="5%" style="background-color:white; color:black; font-size:30px; margin-top:-10px; margin-left:-10px; margin-bottom:10px; height:43px;">
+    <span style="margin-left:5px; background-color:white; color:black; font-size:35px;">DaySet</span>
+    <a href="/" class="navbar-link-nostrap" style="color:blue;">Home</a>
+    <a href="/tools" class="navbar-link-nostrap" style="color:blue;">Tools</a>
+    <a href="/about" class="navbar-link-nostrap" style="color:blue;">About</a>
+    </div>
+    {% extends "app/base.html" %}
+    {% block content %}
+    <title>Weather Data | Tools | DaySet</title>
+
+<h1>Weather Data</h1>
+
+  {% for i in data %}
+  <p>{{i}}</p>
+  {% endfor %}
+
+{% endblock %}
